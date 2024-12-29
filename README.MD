@@ -8,6 +8,7 @@
 | ``<fstream>``| [HACKMD](https://hackmd.io/@ndhu-programming-2021/BkZukG4jK)|
 | ``<sstream>``| [aprilyang.home.blog](https://aprilyang.home.blog/2020/04/17/stringstream-to-read-int-from-a-string/)|
 | ``<filesystem>`` | [stackoverflow](https://stackoverflow.com/questions/43440246/how-to-delete-a-file-in-file-handling-in-c) |
+| ``"0xEF,0xBB,0xBF"``| [stackoverflow](https://stackoverflow.com/questions/37591361/how-to-write-unicode-string-to-file-with-utf-8-bom-by-c)|
 | ``<vector>`` | [shengyu7697.github.io](https://shengyu7697.github.io/std-vector/)|
 | ``std::cerr``| [w3school](https://www.w3schools.com/cpp/ref_iostream_cerr.asp)|
 
