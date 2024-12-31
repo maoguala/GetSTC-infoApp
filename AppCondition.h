@@ -86,18 +86,20 @@ void SrcStuSelOpt() //MainPageOptSel()
     //===================================================================
         //std::string line;
         std::vector<std::string> result; // save split string
-        while (std::getline(in, GetString)) { //save the string tempturely 
-        std::stringstream ss(GetString); //control data string IO
-        std::string token;
+        while (std::getline(in, GetString)) { //save the string tempturely
+            
+            std::stringstream ss(GetString); //control data string IO
+            std::string token;
 
-        // spilt from comma
-        if (std::getline(ss, token, ',')) GetStuInfo_Name = token;
-        if (std::getline(ss, token, ',')) GetStuInfo_Sex = token;
-        if (std::getline(ss, token, ',')) GetStuInfo_Birthday = token;
-        if (std::getline(ss, token, ',')) GetStuInfo_Professor = token;
-        if (std::getline(ss, token, ',')) GetStuInfo_Department = token;
-        GetStuInfoUI();
-    }
+            // spilt from comma
+            if (std::getline(ss, token, ',')) GetStuInfo_Name = token;
+            if (std::getline(ss, token, ',')) GetStuInfo_Sex = token;
+            if (std::getline(ss, token, ',')) GetStuInfo_Birthday = token;
+            if (std::getline(ss, token, ',')) GetStuInfo_Professor = token;
+            if (std::getline(ss, token, ',')) GetStuInfo_Department = token;
+            GetStuInfoUI();
+        
+        }
     in.close();
     //===================================================================
     std::cout << std::endl;
@@ -118,16 +120,18 @@ void SrcThcSelOpt()
     //===================================================================
         //std::string line;
         std::vector<std::string> result; // save split string
-        while (std::getline(in, GetString)) { //save the string tempturely 
-        std::stringstream ss(GetString); //control data string IO
-        std::string token;
+        while (std::getline(in, GetString)) { //save the string tempturely
+            
+            std::stringstream ss(GetString); //control data string IO
+            std::string token;
 
-        // spilt from comma
-        if (std::getline(ss, token, ',')) GetTchInfo_Name = token;
-        if (std::getline(ss, token, ',')) GetTchInfo_Sex = token;
-        if (std::getline(ss, token, ',')) GetTchInfo_Department = token;
-        GetTchInfoUI();
-    }
+            // spilt from comma
+            if (std::getline(ss, token, ',')) GetTchInfo_Name = token;
+            if (std::getline(ss, token, ',')) GetTchInfo_Sex = token;
+            if (std::getline(ss, token, ',')) GetTchInfo_Department = token;
+            GetTchInfoUI();
+        
+        }
     in.close();
     //===================================================================
     std::cout << std::endl;
@@ -148,16 +152,18 @@ void SrcCrsSelOpt()
     //===================================================================
         //std::string line;
         std::vector<std::string> result; // save split string
-        while (std::getline(in, GetString)) { //save the string tempturely 
-        std::stringstream ss(GetString); //control data string IO
-        std::string token;
+        while (std::getline(in, GetString)) { //save the string tempturely
+            
+            std::stringstream ss(GetString); //control data string IO
+            std::string token;
 
-        // spilt from comma
-        if (std::getline(ss, token, ',')) GetCrsInfo_Name = token;
-        if (std::getline(ss, token, ',')) GetCrsInfo_Professor = token;
-        if (std::getline(ss, token, ',')) GetCrsInfo_Content = token;
-        GetCrsInfoUI();
-    }
+            // spilt from comma
+            if (std::getline(ss, token, ',')) GetCrsInfo_Name = token;
+            if (std::getline(ss, token, ',')) GetCrsInfo_Professor = token;
+            if (std::getline(ss, token, ',')) GetCrsInfo_Content = token;
+            GetCrsInfoUI();
+            
+        }
     in.close();
     //===================================================================
     std::cout << std::endl;
