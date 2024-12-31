@@ -207,7 +207,7 @@ void CrtStuSelOpt()
         }
         else
         {
-            std::cerr << "FILE WAS FAILD TO CREAT, PLEASE TYR AGAING !\n";
+            std::cerr << "資料無法建立!請再次嘗試！請確定有建立檔案之權限!\n";
             return;   
         }
     }
@@ -220,7 +220,7 @@ void CrtStuSelOpt()
     std::ofstream out(Fname, std::ios::out | std::ios::binary);
     if (!out)
     {
-        std::cerr << "Failed to create file: " << Fname << '\n';
+        std::cerr << "建立檔案失敗： " << Fname << '\n';
         return;
     }
     out << "\xEF\xBB\xBF"; //BOM
@@ -268,7 +268,7 @@ void CrtTchSelOpt()
         }
         else
         {
-            std::cerr << "FILE WAS FAILD TO CREAT, PLEASE TYR AGAING !\n";
+            std::cerr << "資料無法建立!請再次嘗試！請確定有建立檔案之權限！\n";
             //return 1;   
         }
     }
@@ -281,7 +281,7 @@ void CrtTchSelOpt()
     std::ofstream out(Fname, std::ios::out | std::ios::binary);
     if (!out)
     {
-        std::cerr << "Failed to create file: " << Fname << '\n';
+        std::cerr << "建立檔案失敗：" << Fname << '\n';
         return;
     }
     out << "\xEF\xBB\xBF"; //BOM
@@ -327,7 +327,7 @@ void CrtCrsSelOpt()
         }
         else
         {
-            std::cerr << "FILE WAS FAILD TO CREAT, PLEASE TYR AGAING !\n";
+            std::cerr << "資料無法建立!請再次嘗試！請確定有建立檔案之權限!\n";
             //return 1;   
         }
     }
@@ -340,7 +340,7 @@ void CrtCrsSelOpt()
     std::ofstream out(Fname, std::ios::out | std::ios::binary);
     if (!out)
     {
-        std::cerr << "Failed to create file: " << Fname << '\n';
+        std::cerr << "建立檔案失敗：" << Fname << '\n';
         return;
     }
     out << "\xEF\xBB\xBF"; //BOM
